@@ -1,0 +1,14 @@
+---
+description: DecisionPro marketing site conventions
+alwaysApply: true
+---
+
+# DecisionPro-web
+
+- Umbrella: `C:/Augen Studios Dropbox/Ken Greenwood/Modus Novus/Projects/DecisionPro-web`
+- Canonical Git root: `dev/local repo`
+- App ID: `decisionpro-web`
+- Ports: `5050-5059`
+- Host marketing on Vercel; demo wireframe remains in the DecisionPro repo
+- Brand as DecisionPro Kentucky; attribute as a product of XenoDroid Inc.
+- Never add PHI, secrets, or credentials
