@@ -533,6 +533,10 @@ nav a:focus-visible {
     grid-template-columns: 1fr;
   }
 
+  .hero-visual {
+    object-position: 55% 10%;
+  }
+
   .site-header {
     align-items: flex-start;
     flex-direction: column;
@@ -560,12 +564,6 @@ nav a:focus-visible {
   .flow-list li::before {
     grid-row: auto;
     margin-bottom: 0.25rem;
-  }
-}
-
-@media (max-width: 900px) {
-  .hero-visual {
-    object-position: 55% 10%;
   }
 }
 
