@@ -1,7 +1,9 @@
 # DecisionPro marketing site
 
-Public marketing site for **DecisionPro Kentucky** — Legislative Modeling &
-Decision Support System.
+Public marketing site for **DecisionPro** — a multi-state public-program
+decision-intelligence platform. Kentucky and Florida are the current state
+products; the shared operating model connects governed evidence to accountable
+action and measured outcomes.
 
 A product of **XenoDroid Inc.**
 

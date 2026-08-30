@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "evidenceClass": "headless-validated",
+  "screenshot": "docs\\evidence\\multistate-marketing-final\\decisionpro-multistate-marketing.png",
+  "mobileScreenshot": "docs\\evidence\\multistate-marketing-final\\decisionpro-multistate-mobile.png",
+  "viewport": "1440x1000 and 390x844",
+  "title": "DecisionPro — Multi-State Public Program Decision Intelligence",
+  "stateProducts": 2,
+  "comparisonCapabilities": 6,
+  "screenshots": 3,
+  "errors": []
+}
