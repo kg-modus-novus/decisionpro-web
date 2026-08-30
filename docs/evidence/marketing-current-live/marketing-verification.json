@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "evidenceClass": "headless-validated",
+  "screenshot": "C:\\Augen Studios Dropbox\\Ken Greenwood\\Modus Novus\\Projects\\DecisionPro\\dev\\marketing local repo\\docs\\evidence\\marketing-current-live\\decisionpro-multistate-marketing.png",
+  "mobileScreenshot": "C:\\Augen Studios Dropbox\\Ken Greenwood\\Modus Novus\\Projects\\DecisionPro\\dev\\marketing local repo\\docs\\evidence\\marketing-current-live\\decisionpro-multistate-mobile.png",
+  "viewport": "1440x1000 and 390x844",
+  "title": "DecisionPro — Multi-State Public Program Decision Intelligence",
+  "stateProducts": 2,
+  "comparisonCapabilities": 6,
+  "screenshots": 3,
+  "errors": []
+}
