@@ -1,0 +1,3 @@
+Error: Multi-state hero missing.
+    at assert (C:\Augen Studios Dropbox\Ken Greenwood\Modus Novus\Projects\DecisionPro-web\dev\local repo\docs\verify-marketing.cjs:23:61)
+    at C:\Augen Studios Dropbox\Ken Greenwood\Modus Novus\Projects\DecisionPro-web\dev\local repo\docs\verify-marketing.cjs:36:3
