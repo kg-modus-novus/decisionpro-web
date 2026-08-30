@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "evidenceClass": "isolated-rendered",
+  "url": "http://127.0.0.1:55140/",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "mobileViewport": {
+    "width": 390,
+    "height": 844
+  },
+  "screenshot": "C:\\Augen Studios Dropbox\\Ken Greenwood\\Modus Novus\\Projects\\DecisionPro\\dev\\marketing local repo\\docs\\evidence\\harness-workbench\\isolated\\20260830T034505013Z\\decisionpro-multistate-desktop.png",
+  "mobileScreenshot": "C:\\Augen Studios Dropbox\\Ken Greenwood\\Modus Novus\\Projects\\DecisionPro\\dev\\marketing local repo\\docs\\evidence\\harness-workbench\\isolated\\20260830T034505013Z\\decisionpro-multistate-mobile.png",
+  "stateProducts": 2,
+  "comparisonRows": 8,
+  "errors": []
+}

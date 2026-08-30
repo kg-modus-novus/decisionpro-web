@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "evidenceClass": "headless-validated",
+  "url": "http://127.0.0.1:55056/",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "mobileViewport": {
+    "width": 390,
+    "height": 844
+  },
+  "screenshot": "docs\\evidence\\multi-state-marketing\\headless-final\\decisionpro-multistate-desktop.png",
+  "mobileScreenshot": "docs\\evidence\\multi-state-marketing\\headless-final\\decisionpro-multistate-mobile.png",
+  "stateProducts": 2,
+  "comparisonRows": 8,
+  "errors": []
+}
