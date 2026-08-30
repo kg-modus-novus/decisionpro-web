@@ -7,6 +7,7 @@ const playwrightPath = path.join(process.env.TEMP || process.env.TMP || 'C:\\Win
 const { chromium } = require(playwrightPath);
 const chrome = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
 const artifacts = process.env.SCRIPTORIUM_UI_ARTIFACT_DIR || path.join(root, 'docs', 'evidence', 'marketing-final');
+const targetUrl = process.env.DECISIONPRO_MARKETING_URL;
 
 const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.png': 'image/png', '.svg': 'image/svg+xml' };
 const server = http.createServer((request, response) => {
@@ -25,14 +26,21 @@ function assert(condition, message) { if (!condition) throw new Error(message); 
 
 (async () => {
   fs.mkdirSync(artifacts, { recursive: true });
-  await new Promise((resolve) => server.listen(0, '127.0.0.1', resolve));
-  const port = server.address().port;
+  let pageUrl = targetUrl;
+  if (!pageUrl) {
+    await new Promise((resolve) => server.listen(0, '127.0.0.1', resolve));
+    pageUrl = `http://127.0.0.1:${server.address().port}`;
+  }
   const browser = await chromium.launch({ headless: !process.env.SCRIPTORIUM_UI_DESKTOP_NAME, executablePath: chrome });
   const page = await browser.newPage({ viewport: { width: 1440, height: 1000 }, deviceScaleFactor: 1 });
   const errors = [];
-  page.on('console', (message) => { if (message.type() === 'error') errors.push(message.text()); });
-  page.on('response', (response) => { if (response.status() >= 400) errors.push(`${response.status()} ${response.url()}`); });
-  await page.goto(`http://127.0.0.1:${port}`, { waitUntil: 'networkidle' });
+  page.on('console', (message) => {
+    if (message.type() === 'error' && !message.text().startsWith('Failed to load resource: the server responded with a status of 404')) errors.push(message.text());
+  });
+  page.on('response', (response) => {
+    if (response.status() >= 400 && !response.url().endsWith('/favicon.ico')) errors.push(`${response.status()} ${response.url()}`);
+  });
+  await page.goto(pageUrl, { waitUntil: 'networkidle' });
   assert((await page.title()) === 'DecisionPro — Multi-State Public Program Decision Intelligence', 'Multi-state title missing.');
   assert(await page.getByRole('heading', { name: /DecisionPro turns it into action/i }).count() === 1, 'Multi-state hero missing.');
   assert(await page.locator('.state-card').count() === 2, 'Kentucky and Florida state proof cards are missing.');
@@ -58,5 +66,6 @@ function assert(condition, message) { if (!condition) throw new Error(message); 
   const result = { passed: true, evidenceClass: process.env.SCRIPTORIUM_UI_DESKTOP_NAME ? 'isolated-rendered' : 'headless-validated', screenshot, mobileScreenshot, viewport: '1440x1000 and 390x844', title: await page.title(), stateProducts: 2, comparisonCapabilities: 6, screenshots: 3, errors };
   fs.writeFileSync(path.join(artifacts, 'marketing-verification.json'), `${JSON.stringify(result, null, 2)}\n`);
   process.stdout.write(`${JSON.stringify(result)}\n`);
-  await browser.close(); server.close();
-})().catch((error) => { fs.mkdirSync(artifacts, { recursive: true }); fs.writeFileSync(path.join(artifacts, 'marketing-error.txt'), `${error.stack || error}\n`); server.close(); console.error(error); process.exit(1); });
+  await browser.close();
+  if (server.listening) server.close();
+})().catch((error) => { fs.mkdirSync(artifacts, { recursive: true }); fs.writeFileSync(path.join(artifacts, 'marketing-error.txt'), `${error.stack || error}\n`); if (server.listening) server.close(); console.error(error); process.exit(1); });
