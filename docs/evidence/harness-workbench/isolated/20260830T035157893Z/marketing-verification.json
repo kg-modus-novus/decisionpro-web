@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "evidenceClass": "isolated-rendered",
+  "screenshot": "C:\\Augen Studios Dropbox\\Ken Greenwood\\Modus Novus\\Projects\\DecisionPro-web\\dev\\local repo\\docs\\evidence\\harness-workbench\\isolated\\20260830T035157893Z\\decisionpro-multistate-marketing.png",
+  "mobileScreenshot": "C:\\Augen Studios Dropbox\\Ken Greenwood\\Modus Novus\\Projects\\DecisionPro-web\\dev\\local repo\\docs\\evidence\\harness-workbench\\isolated\\20260830T035157893Z\\decisionpro-multistate-mobile.png",
+  "viewport": "1440x1000 and 390x844",
+  "title": "DecisionPro — Multi-State Public Program Decision Intelligence",
+  "stateProducts": 2,
+  "crossStateComparisons": 4,
+  "comparisonCapabilities": 6,
+  "screenshots": 3,
+  "errors": []
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "isolated-rendered",
+  "desktopName": "ScriptoriumUi_92472_6734a518daf043da99c6595e8877c6cc",
+  "desktopPath": "WinSta0\\ScriptoriumUi_92472_6734a518daf043da99c6595e8877c6cc",
+  "windowStation": "WinSta0",
+  "desktopHandleCreated": true,
+  "desktopSecurity": "Null DACL on this unique ephemeral desktop object so same-token child processes can connect",
+  "desktopWasNeverSwitchedVisible": true,
+  "processCreated": true,
+  "nodeProcessId": 32868,
+  "assignedToKillOnCloseJob": true,
+  "runnerProcessId": 92472,
+  "executablePath": "C:\\Program Files\\nodejs\\node.exe",
+  "scenarioPath": "C:\\Augen Studios Dropbox\\Ken Greenwood\\Modus Novus\\Projects\\DecisionPro-web\\dev\\local repo\\docs\\verify-marketing.cjs",
+  "repoPath": "C:\\Augen Studios Dropbox\\Ken Greenwood\\Modus Novus\\Projects\\DecisionPro-web\\dev\\local repo",
+  "startedAt": "2026-08-30T03:51:57.9188365+00:00",
+  "finishedAt": "2026-08-30T03:52:07.3089763+00:00",
+  "timeoutSeconds": 180,
+  "timedOut": false,
+  "exitCode": 0
+}
