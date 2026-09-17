@@ -7,7 +7,7 @@ alwaysApply: true
 
 This project is part of the **Scriptorium supervised development ecosystem**. This priority context applies even when there are no promoted memory entries.
 
-- **Canon version:** `sha256:527f003ec49363cf5d8a44668ca684e523216be3ca28f0a11d42e93c73364100`
+- **Canon version:** `sha256:030c657491feddecb9a2ef07f70a9341728ead36b188d4bd87bd03760d91e154`
 
 - **Authority:** The Director remains authoritative for scope, decisions, exceptions, and acceptance.
 - **Observation:** Panopticon observes technical development via MetaTrace and the agent harness. Observation does not transfer decision authority away from the Director.
@@ -24,30 +24,27 @@ This project is part of the **Scriptorium supervised development ecosystem**. Th
 
 ## Project identity
 
-- Root: `C:\Augen Studios Dropbox\Ken Greenwood\Modus Novus\Projects\DecisionPro-web\dev\local repo`
+- Root: `D:\non-dbx-dev\DecisionPro-web\repos\decisionpro-web`
 - Kind: app-repository
 - Apps: DecisionPro Marketing (`decisionpro-web`)
 - Identity aliases: `decisionpro-web`, `DecisionPro Marketing`, `DecisionPro-web`, `DecisionPro.io`
-- Canonical Git repository: `C:\Augen Studios Dropbox\Ken Greenwood\Modus Novus\Projects\DecisionPro-web\dev\local repo`
-- Repository keys: `c-augen-studios-dropbox-ken-greenwood-modus-novus-projects-decisionpro-web-dev-local-repo`
+- Canonical Git repository: `D:\non-dbx-dev\DecisionPro-web\repos\decisionpro-web`
+- Repository keys: `d-non-dbx-dev-decisionpro-web-repos-decisionpro-web`
 - Remote: https://github.com/kg-modus-novus/decisionpro-web.git
 - Branch observed by index: main
-- Umbrella/parent root: `C:\Augen Studios Dropbox\Ken Greenwood\Modus Novus\Projects\DecisionPro-web`
+- Umbrella/parent root: none evidenced
 - Nested roots: none evidenced
 
 ## Operational context
 
-- **Git operations:** For status, diff, add, commit, pull, or push requests naming this project or any identity alias, use `C:\Augen Studios Dropbox\Ken Greenwood\Modus Novus\Projects\DecisionPro-web\dev\local repo` as the working directory. Never substitute the workspace root, a parent folder, or the most recently touched repository.
-- Verification: `powershell.exe -NoProfile -ExecutionPolicy Bypass -File "C:\Augen Studios Dropbox\Ken Greenwood\The Scriptorium\hub\scripts\harness\verify.ps1" -RepoPath "C:\Augen Studios Dropbox\Ken Greenwood\Modus Novus\Projects\DecisionPro-web\dev\local repo"`
-- Ports (decisionpro-web): `C:\Augen Studios Dropbox\Ken Greenwood\Modus Novus\Projects\DecisionPro-web\dev\local repo\ports.json` — frontend 5050-5059
+- **Git operations:** For status, diff, add, commit, pull, or push requests naming this project or any identity alias, use `D:\non-dbx-dev\DecisionPro-web\repos\decisionpro-web` as the working directory. Never substitute the workspace root, a parent folder, or the most recently touched repository.
+- Verification: `powershell.exe -NoProfile -ExecutionPolicy Bypass -File "C:\Augen Studios Dropbox\Ken Greenwood\The Scriptorium\hub\scripts\harness\verify.ps1" -RepoPath "D:\non-dbx-dev\DecisionPro-web\repos\decisionpro-web"`
+- Ports (decisionpro-web): `D:\non-dbx-dev\DecisionPro-web\repos\decisionpro-web\ports.json` — frontend 5050-5059
 - Landscape: no registered environment landscape
 
 ## Adaptive phase-trellis measurement
 
-- Measurement: 24 phases recomputed; 0 currently have observed evidence.
-- Observed growth: none yet
-- Strongest opportunities: 100 Project Initiation and Initial Definitions (not-assessed); 200 General Requirements Gathering (not-assessed); 300 Focused Business Requirements and Rules (not-assessed)
-- Interpretation: measurements describe evidence strength and useful next work; they never select or block the phase the Director chooses.
+- Measurement: not yet projected; treat every phase as unassessed, not prohibited.
 
 ## Canonical Scriptorium pointers
 
